@@ -1,0 +1,137 @@
+@charset "UTF-8"; /* --- PCサイズ以上 --- */
+@media screen and (min-width: 1000px) {
+/* --- header --- */
+header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f5f5f5;
+  line-height: 60px;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+.global-nav  {
+  background-color: #f5f5f5;
+  display: block;
+}
+.global-nav ul {
+  display: flex;
+}
+.global-nav ul li {
+  margin-left: 15px;
+  border-bottom: none;
+}
+.global-nav ul li a {
+  color: black;
+}
+  /* --ハンバーガーメニュー非表示-- */
+.icon-swith {
+  display: none;
+}
+
+
+/* --- main-image --- */
+.main-image {
+  height: 500px;
+}
+.main-image h2 {
+  font-size: 60px;
+}
+
+
+/* --- news --- */
+.news {
+  width: 45%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.news .news-texts li {
+  display: flex;
+  background-color: transparent;
+}
+
+
+/* --- interview ---*/
+.interview {
+  height: 500px;
+}
+.interviewbox h2 {
+  font-size: 30px;
+}
+.detail {
+  width: 30%;
+}
+
+
+/* --- business --- */
+.business {
+  width: 65%;
+}
+.business img {
+  width: 80%;
+}
+.b-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.b-box {
+  width: 23%;
+  box-shadow: 5px 5px rgba(0,0,0,0.4);
+  margin-bottom: 0;
+}
+
+
+/* ---- detail-link --- */
+.detail-link {
+  display: flex;
+}
+.detail-link .d-wapper {
+  height: 230px;
+  width: 50%;
+  display: flex;
+  text-align: normal;
+}
+.blueFilter, .pinkFilter {
+  display: flex;
+}
+.detail-link .d-wapper .detail {
+  width: 30%;
+  margin: 0;
+  align-self: flex-end;
+  position: absolute;
+  left: 90%;
+  transform: translateX(-90%);
+  -webkit-transform: translateX(-90%);
+  box-sizing: border-box;
+}
+
+
+/*--- access ---*/
+.acces-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#accesMap {
+  width: 400px;
+}
+.acces-wrapper table {
+  width: 50%;
+}
+.acces-wrapper table th {
+  width: 20%;
+}
+.acces-wrapper table td {
+  width: 80%;
+}
+
+
+
+
+
+
+}
