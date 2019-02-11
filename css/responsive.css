@@ -1,0 +1,49 @@
+@charset "UTF-8"; /* --- タブレットサイズ以上 --- */
+@media screen and (min-width: 670px) {
+/* --- news --- */
+.news{
+  padding-top: 50px;
+}
+
+
+/* --- business --- */
+.business {
+  padding-top: 50px;
+}
+
+
+/* ---- detail-link --- */
+.detail-link {
+  display: flex;
+}
+.detail-link .d-wapper {
+  height: 230px;
+  width: 50%;
+  display: flex;
+}
+.detail-link .d-wapper .detail {
+  width: 50%;
+}
+
+
+/* --- interview --- */
+.interviewbox {
+  background-color: #eee;
+  color: black;
+  text-align: center;
+  border: 2px solid black;
+  width: 50%;
+}
+
+
+/* --- accses --- */
+.acces {
+  padding-top: 50px;
+}
+
+
+
+
+
+
+}
