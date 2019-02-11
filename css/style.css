@@ -1,0 +1,259 @@
+@charset "UTF-8"; /* --- スマホサイズ --- */
+/*--- 全体のスタイル ---*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* --- header ---*/
+header {
+  width: 100%;
+  background-color: #f5f5f5;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+.responsive-Hwrapper {
+  padding: 0 20px 0 20px;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.global-nav {
+  background-color: #3e3e3e;
+  display: none;
+}
+.global-nav ul li {
+  padding-left: 20px;
+  border-bottom: 1px solid black;
+}
+.global-nav ul li a {
+  color: white;
+}
+.header-left:hover,
+.global-nav ul li a:hover {
+  color: skyblue;
+}
+
+
+/* --- main-image --- */
+.main-image {
+  height: 280px;
+  width: 100%;
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+  /* -- 背景フィルター -- */
+.blackFilter {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+/* --- news --- */
+.news {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+.news h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.news .news-texts li {
+  background-color: #f5f5f5;
+}
+.news .news-texts li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}
+
+
+/* --- interview ---*/
+.interview {
+  height: 280px;
+  width: 100%;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.interviewbox {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  color: white;
+  border-radius: 10px;
+}
+.interviewbox h2 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.detail {
+  border: 1px solid #1e90ff;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #1e90ff;
+}
+.interviewbox .detail {
+  margin: 15px auto 15px auto;
+}
+.detail a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.detail:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+
+/*--- business ---*/
+.business {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+.business img {
+  width: 40%;
+  height: auto;
+}
+.business h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.b-box {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #eee;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.b-box h3 {
+  color: #1e90ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.b-box:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---- detail-link --- */
+.detail-link .d-wapper {
+  height: 180px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.detail-link .d-wapper h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2f4f4f;
+}
+.detail-link .d-wapper .detail {
+  width: 80%;
+}
+.detail-link .company {
+  background-image: url(../img/bg4.jpg);
+}
+.detail-link .recruit {
+  background-image: url(../img/bg5.jpg);
+}
+.blueFilter .d-2,.pinkFilter .d-2 {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateY(-3%) translateX(-50%);
+  -webkit-transform: translateY(-3%) translateX(-50%);
+}
+
+  /* -- 背景フィルター -- */
+.blueFilter, .pinkFilter {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.blueFilter {
+  background-color: rgba(158, 255, 255, 0.3);
+}
+.pinkFilter {
+  background-color: rgba(255, 163, 255, 0.3);
+}
+
+
+/*--- access ---*/
+.acces {
+  background-color: #eee;
+  padding: 30px 0 50px;
+}
+.acces h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.acces-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+#accesMap {
+  height: 300px;
+  width: 100%;
+}
+.acces-wrapper table {
+  width: 100%;
+}
+.acces-wrapper table th {
+  width: 30%;
+  vertical-align: top;
+}
+.acces-wrapper table td {
+  width: 70%;
+}
+.acces-wrapper table th,
+.acces-wrapper table td {
+  line-height: 3;
+}
+.acces-wrapper table tr:last-child td {
+  line-height: normal;
+}
+
+/*--- footer ---*/
+footer {
+  height: 40px;
+  text-align: center;
+}
+footer small {
+  line-height: 40px;
+  color: gray;
+}
